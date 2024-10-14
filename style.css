@@ -81,6 +81,12 @@ h2 {
   color: hsl(24, 5%, 18%);
 }
 
+.responsive {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .time_prep {
   background-color: hsl(330, 100%, 98%);
   display: flex;
