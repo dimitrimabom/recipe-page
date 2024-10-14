@@ -1,0 +1,187 @@
+$Nutmeg: hsl(14, 45%, 36%);
+$Dark_Raspberry: hsl(332, 51%, 32%);
+$Dark_Raspberry_Opacity: hsla(332, 51%, 32%, 0.5);
+$White: hsl(0, 0%, 100%);
+$Rose_White: hsl(330, 100%, 98%);
+$Eggshell: hsl(30, 54%, 90%);
+$Light_Grey: hsl(30, 18%, 87%);
+$Wenge_Brown: hsl(30, 10%, 34%);
+$Dark_Charcoal: hsl(24, 5%, 18%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: $Wenge_Brown;
+  line-height: 1.5;
+}
+
+.attribution {
+  font-size: 13px;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+main {
+  background-color: $Eggshell;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: "Young Serif", serif;
+  color: $Nutmeg;
+  margin-bottom: 20px;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: $Light_Grey;
+  margin: auto;
+}
+
+.li_base_style {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 25px;
+
+  li {
+    &::marker {
+      color: $Nutmeg;
+      font-weight: 700;
+    }
+    padding-left: 15px;
+
+    .bold {
+      font-weight: 700;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: $White;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 150px 0;
+  padding: 40px;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 750px;
+  margin-bottom: 30px;
+
+  img {
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 35px;
+    font-family: "Young Serif", serif;
+    color: $Dark_Charcoal;
+  }
+}
+
+.responsive {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.time_prep {
+  background-color: $Rose_White;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 20px;
+
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: $Dark_Raspberry;
+    font-family: "Outfit", sans-serif;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 30px;
+
+    li {
+      &::marker {
+        color: $Dark_Raspberry;
+      }
+      padding-left: 15px;
+
+      .bold {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.nutrition table {
+  width: 100%;
+  margin: 20px 0;
+
+  tr {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $Rose_White;
+    }
+
+    th, td {
+      width: 100%;
+      border-bottom: 1px solid hsla(32, 10%, 34%, 0.25);
+      padding: 10px 30px;
+      text-align: left;
+    }
+
+    td {
+      font-weight: 700;
+      color: $Nutmeg;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main {
+    background-color: $White;
+  }
+
+  .responsive {
+    padding: 20px;
+  }
+
+  .card {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+
+    img {
+      border-radius: 0;
+    }
+  }
+}
