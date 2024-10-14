@@ -95,10 +95,11 @@ h2 {
   border-radius: 10px;
   padding: 20px;
 }
-.time_prep h3 {
+.time_prep h2 {
   font-size: 20px;
   font-weight: 700;
   color: hsl(332, 51%, 32%);
+  font-family: "Outfit", sans-serif;
 }
 .time_prep ul {
   display: flex;
