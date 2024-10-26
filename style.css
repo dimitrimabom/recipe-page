@@ -19,10 +19,6 @@
   color: hsl(228, 45%, 44%);
 }
 
-main {
-  background-color: hsl(30, 54%, 90%);
-}
-
 h2 {
   font-size: 30px;
   font-family: "Young Serif", serif;
@@ -58,6 +54,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: hsl(30, 54%, 90%);
 }
 
 .card {
@@ -65,12 +62,11 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin: 150px 0;
+  margin: 100px 0;
   padding: 40px;
   border-radius: 30px;
   width: 100%;
   max-width: 750px;
-  margin-bottom: 30px;
 }
 .card img {
   border-radius: 10px;
